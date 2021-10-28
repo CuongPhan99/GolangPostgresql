@@ -25,9 +25,8 @@ func main() {
 
 	e.GET("/accounts/:id", controller.GetAccountById)
 
-	e.POST("/accounts/:id/logo", controller.UpdateLogo)
+	e.POST("/accounts/:id", controller.UpdateCompany)
 
-	e.POST("/accounts/:id/company_name", controller.UpdateCompanyName)
 	// Start server
 	e.Logger.Fatal(e.Start(":1323"))
 }

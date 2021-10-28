@@ -11,4 +11,6 @@ type Accounts struct {
 	IntroduceName   string `json:"seller_name"`
 	CheckNumber     string `json:"check_number"`
 	OriginerImprint string `json:"originer_imprint"`
+	Security        bool   `json:"security"`
+	Notification    bool   `json:"notification"`
 }
